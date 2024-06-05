@@ -1,0 +1,42 @@
+package base;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class TestBase {
+	
+	public WebDriver driver;
+	public String browserName= "chrome";
+	
+	
+	
+	public void setUp()
+	{
+		
+		
+		//launching chrome browser
+		
+		if(browserName.equalsIgnoreCase("chrome"));
+		{
+			
+		}
+		driver= new ChromeDriver();
+		
+		
+	}
+	
+	else if(browserName.equalsIgnoreCase("firefox"));
+	{
+		driver= new FirefoxDriver();
+		
+	}
+	
+	
+	
+	public void tearDown() {
+		
+		
+	}
+
+}

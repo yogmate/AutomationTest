@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-26T00:50:14 IST" name="Smoke Test Suite" finished-at="2024-05-26T00:50:14 IST" duration-ms="181">
+    <groups>
+      <group name="regression">
+        <method signature="AddUserTest.p3user()[pri:3, instance:annotation_demo.AddUserTest@2362f559]" name="p3user" class="annotation_demo.AddUserTest"/>
+      </group> <!-- regression -->
+      <group name="sanity">
+        <method signature="AddUserTest.normaluser()[pri:0, instance:annotation_demo.AddUserTest@2362f559]" name="normaluser" class="annotation_demo.AddUserTest"/>
+        <method signature="AddUserTest.p3user()[pri:3, instance:annotation_demo.AddUserTest@2362f559]" name="p3user" class="annotation_demo.AddUserTest"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2024-05-26T00:50:14 IST" name="Test" finished-at="2024-05-26T00:50:14 IST" duration-ms="181">
+      <class name="annotation_demo.AddUserTest">
+        <test-method signature="normaluser()[pri:0, instance:annotation_demo.AddUserTest@2362f559]" started-at="2024-05-26T00:50:14 IST" name="normaluser" finished-at="2024-05-26T00:50:14 IST" duration-ms="40" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- normaluser -->
+        <test-method signature="p3user()[pri:3, instance:annotation_demo.AddUserTest@2362f559]" started-at="2024-05-26T00:50:14 IST" name="p3user" finished-at="2024-05-26T00:50:14 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- p3user -->
+      </class> <!-- annotation_demo.AddUserTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Smoke Test Suite -->
+</testng-results>

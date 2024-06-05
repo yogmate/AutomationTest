@@ -1,0 +1,46 @@
+package main;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Iterator;
+
+import org.apache.commons.compress.utils.Iterators;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ExcelData {
+	
+	public static void main(String[] args) throws IOException {
+		
+		//create object of workbook
+		
+		FileInputStream fis= new FileInputStream("C:\\Users\\mahes\\Downloads\\Exceldata.xlsx");
+		XSSFWorkbook workbook= new XSSFWorkbook(fis);
+		
+		int numsheet= workbook.getNumberOfSheets();
+		
+		
+		XSSFSheet sheet = null;
+		
+		for(int i=0; i<numsheet; i++)
+		{
+			
+			if(workbook.getSheetName(i).equalsIgnoreCase("Exceldata"))
+			{
+				
+				 sheet= workbook.getSheetAt(i);
+			}
+			
+		}
+			
+		Iterator itrow = sheet.iterator();
+	   Row row=itrow.next();
+		
+		
+		
+		
+		
+		
+	}
+
+}

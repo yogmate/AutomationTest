@@ -1,0 +1,21 @@
+package tests;
+
+import base.TestBase;
+import pageobject.login.LoginPage;
+
+public class LoginTest extends TestBase
+
+
+
+{
+	
+	
+	public void loginusertest() {
+		
+		
+		LoginPage page= new LoginPage(driver);
+		
+		
+	}
+
+}

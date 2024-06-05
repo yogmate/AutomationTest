@@ -1,0 +1,22 @@
+package browser;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class BrowserTest {
+
+	
+	public static void main(String[] args) {
+		
+	//Chrome browser
+		
+		ChromeDriver driver= new ChromeDriver();
+		driver.get("https://www.google.com");
+		
+		String url= driver.getCurrentUrl();
+		System.out.println(url);
+		driver.close();
+		
+		
+		
+	}
+}
